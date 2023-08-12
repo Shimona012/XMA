@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "x-minder-app-final",
+    "slug": "x-minder-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Logo/Logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/nngs.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Logo/Logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.shimona.xminderApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "140aa623-aeb1-4727-b05e-0afe8401457b"
+      }
+    }
+  }
+}
