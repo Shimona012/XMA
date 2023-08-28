@@ -25,6 +25,7 @@ import Detail from '../Screens/ProductDetailScreen';
 import ProductScreen from '../Screens/ProductScreen';
 import AddItem from '../Screens/AddItem';
 import GetStarted from '../Screens/GetStarted';
+import Help from '../Screens/Help';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, View, TouchableOpacity, Image, Text } from 'react-native';
 
@@ -210,6 +211,14 @@ function SettingsStack() {
       <SStack.Screen
         name="Contactus"
         component={ContactUs}
+        options={{
+          ...TransitionPresets.RevealFromBottomAndroid,
+          cardStyleInterpolator: CardStyleInterpolators.forModalPresentationIOS,
+        }}
+      />
+      <SStack.Screen
+        name="Help"
+        component={Help}
         options={{
           ...TransitionPresets.RevealFromBottomAndroid,
           cardStyleInterpolator: CardStyleInterpolators.forModalPresentationIOS,
