@@ -101,14 +101,14 @@ export default class AddItem extends Component {
 
  const trigger=new Date(triggerTS);
    
-     trigger.setHours(22);
-     trigger.setMinutes(30);
+     trigger.setHours(10);
+     trigger.setMinutes(0);
      trigger.setSeconds(0);
      console.log(trigger);
     await Notifications.scheduleNotificationAsync({
       content: {
         title: this.state.title + ' is getting expired today',
-        body: 'Check the Xminder App for details',
+        body: 'Check the X-Minder App for details',
       },
      // channelId: channelId,
        trigger,
