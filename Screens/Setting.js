@@ -197,6 +197,26 @@ export default class Settings extends Component {
             </View>
 
             <View style={styles.ss}>
+              <AntDesign
+                name={'questioncircleo'}
+                size={24}
+                color="#10341c"
+              />
+              <TouchableOpacity
+                onPress={() => {
+                  this.props.navigation.navigate('Help');
+                }}
+                style={styles.sss}
+              >
+                <Text style={{ color: '#10341c', fontSize: 16 }}>
+                  Help
+                </Text>
+              </TouchableOpacity>
+            </View>
+
+            
+           
+            <View style={styles.ss}>
               <MaterialCommunityIcons
                 name="logout"
                 size={27}
